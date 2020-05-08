@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html, body {
@@ -57,13 +58,48 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.12rem;
+    margin-bottom: 3%;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+}
+
+ /* ===== general styles ===== */
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* ===== header styles ===== */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 5% 2% 0;
+    flex-wrap: wrap;
+}
+
+.navbar-links{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar img:nth-of-type(2){
+    margin: 5% 0;
+    background-size: cover;
 }
 
 .container {
@@ -75,18 +111,20 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 3%;  
 }
 
+ /* ===== middle content styles ===== */
+
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     border-bottom: 1px dashed black;
 }
 
@@ -103,14 +141,73 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 100px; 
     background: black;
-    margin: 20px 2.5%;
+    margin: 3% 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .box:nth-of-type(1){
+    background: teal;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(2){
+    background: gold;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(3){
+    background: cadetblue;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(4){
+    background: coral;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(5){
+    background: crimson;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(6){
+    background: forestgreen;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(7){
+    background: darkorchid;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(8){
+    background: hotpink;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(9){
+    background: indigo;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+.middle-content .boxes .box:nth-of-type(10){
+    background: dodgerblue;
+    animation-name: degrade;
+    animation-duration: 10s;
+}
+
+@keyframes degrade {
+    0% {filter: grayscale(0)}
+    50% {filter: grayscale(100%)}
+    100% {filter: grayscale(0%)}
+  }
+
+
+ /* ===== bottom content styles ===== */
 
 .bottom-content {
     display: flex;
@@ -136,11 +233,129 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 3% 2%;
+    font-size: .87rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* ===== tablet view ===== */
+
+@media(max-width: 800px){
+    header{
+        margin: 5% 0 0;
+        justify-content: space-around;
+    }
+
+    header img:nth-of-type(1){
+        margin-left: 2%;
+    }
+
+    .navbar-links{
+        width: 65%;
+    }
+
+    
+
+    .top-content{
+        flex-direction: column;
+    }
+
+    .top-content .text-container{
+        width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        width: 30%;
+        height: 240px;
+    }
+
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .bottom-content .text-container{
+        width: 36%;
+        margin: 2%;
+    }
+
+    nav{
+        margin: 0 auto;
+    }
+}
+
+
+/* ===== mobil styles =====  */
+
+@media(max-width: 500px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar img:nth-of-type(2){
+        height: 170px;
+    }
+
+    .navbar-links{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8rem;
+        margin: 7% 0;
+    }
+
+    .navbar-links a{
+        margin: 2% 0;
+    }
+
+    .top-content .text-container{
+        padding:  5%;
+    }
+
+    .top-content .text-container h2{
+        font-size: 1.8rem;
+    }
+    .top-content .text-container p{
+        font-size: 1.2rem;
+    }
+
+    .middle-content h2{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 2%;
+    }
+    
+    .middle-content .boxes .box {
+        width: 49%;
+        height: 245px;
+    }
+
+    .bottom-content .text-container{
+        width: 100%;
+        margin: 2%;
+    }
+
+    .bottom-content .text-container h2{
+        font-size: 1.5rem;
+    }
+
+    .bottom-content .text-container p{
+        font-size: 1.2rem;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav a{
+        font-size: 1.6rem;
+        margin: 2% 0;
+    }
 }
