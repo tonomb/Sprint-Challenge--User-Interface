@@ -49,7 +49,6 @@ table {
 
 * {
     box-sizing: border-box;
-    max-width: 100% ;
 }
 
 html, body {
@@ -67,6 +66,7 @@ p {
     line-height: 1.4;
 }
 
+<<<<<<< HEAD
  /* ===== general styles ===== */
 
 .container {
@@ -76,6 +76,8 @@ p {
 
 /* ===== header styles ===== */
 
+=======
+>>>>>>> parent of 4fb657b... fixed horizontal scroll, added viewport metatag
 header{
     display: flex;
     justify-content: space-between;
@@ -99,9 +101,10 @@ header{
     margin: 5% 0;
 }
 
-
-
- /* ===== top content ===== */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
 
 .top-content {
     display: flex;
@@ -194,8 +197,6 @@ header{
     padding-right: 0;
 }
 
- /* ===== footer styles ===== */
-
 footer {
     width: 100%;
     background: black;
@@ -213,6 +214,7 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+<<<<<<< HEAD
 }
 
 
@@ -240,4 +242,6 @@ footer nav a {
         width: 40%;
     }
 
+=======
+>>>>>>> parent of 4fb657b... fixed horizontal scroll, added viewport metatag
 }
