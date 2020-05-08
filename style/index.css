@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html, body {
@@ -218,8 +219,12 @@ footer nav a {
 
 @media(max-width: 800px){
     header{
-        margin: 5% 5% 0;
+        margin: 5% 0 0;
         justify-content: space-around;
+    }
+
+    header img:nth-of-type(1){
+        margin-left: 2%;
     }
 
     .navbar-links{
@@ -253,5 +258,75 @@ footer nav a {
 
     nav{
         margin: 0 auto;
+    }
+}
+
+
+/* ===== mobil styles =====  */
+
+@media(max-width: 500px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar img:nth-of-type(2){
+        height: 170px
+
+    }
+
+    .navbar-links{
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8rem;
+        margin: 7% 0;
+    }
+
+    .navbar-links a{
+        margin: 2% 0;
+    }
+
+    .top-content .text-container{
+        padding:  5%;
+    }
+
+    .top-content .text-container h2{
+        font-size: 1.8rem;
+    }
+    .top-content .text-container p{
+        font-size: 1.2rem;
+    }
+
+    .middle-content h2{
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 2%;
+    }
+    
+    .middle-content .boxes .box {
+        width: 49%;
+        height: 245px;
+    }
+
+    .bottom-content .text-container{
+        width: 100%;
+        margin: 2%;
+    }
+
+    .bottom-content .text-container h2{
+        font-size: 1.5rem;
+    }
+
+    .bottom-content .text-container p{
+        font-size: 1.2rem;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav a{
+        font-size: 1.6rem;
+        margin: 2% 0;
     }
 }
