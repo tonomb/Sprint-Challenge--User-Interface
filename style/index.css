@@ -66,7 +66,6 @@ p {
     line-height: 1.4;
 }
 
-<<<<<<< HEAD
  /* ===== general styles ===== */
 
 .container {
@@ -76,8 +75,6 @@ p {
 
 /* ===== header styles ===== */
 
-=======
->>>>>>> parent of 4fb657b... fixed horizontal scroll, added viewport metatag
 header{
     display: flex;
     justify-content: space-between;
@@ -214,7 +211,6 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
-<<<<<<< HEAD
 }
 
 
@@ -222,7 +218,7 @@ footer nav a {
 
 @media(max-width: 800px){
     header{
-        margin: 5% 0 0;
+        margin: 5% 5% 0;
         justify-content: space-around;
     }
 
@@ -239,9 +235,23 @@ footer nav a {
     }
 
     .middle-content .boxes .box {
-        width: 40%;
+        width: 30%;
+        height: 240px;
     }
 
-=======
->>>>>>> parent of 4fb657b... fixed horizontal scroll, added viewport metatag
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .bottom-content .text-container{
+        width: 36%;
+        margin: 2%;
+    }
+
+    nav{
+        margin: 0 auto;
+    }
 }
