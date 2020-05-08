@@ -58,8 +58,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.12rem;
+    margin-bottom: 3%;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -70,7 +70,7 @@ p {
  /* ===== general styles ===== */
 
 .container {
-    width: 800px;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -107,20 +107,20 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 3%;  
 }
 
  /* ===== middle content styles ===== */
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 3%;
     border-bottom: 1px dashed black;
 }
 
@@ -137,9 +137,9 @@ header{
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
+    height: 100px; 
     background: black;
-    margin: 20px 2.5%;
+    margin: 3% 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -206,8 +206,8 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 3% 2%;
+    font-size: .87rem;
 }
 
 footer nav a {
@@ -219,5 +219,25 @@ footer nav a {
 /* ===== tablet view ===== */
 
 @media(max-width: 800px){
-   
+    header{
+        margin: 5% 0 0;
+        justify-content: space-around;
+    }
+
+    .navbar-links{
+        width: 65%;
+    }
+
+    .top-content{
+        flex-direction: column;
+    }
+
+    .top-content .text-container{
+        width: 100%;
+    }
+
+    .middle-content .boxes .box {
+        width: 40%;
+    }
+
 }
