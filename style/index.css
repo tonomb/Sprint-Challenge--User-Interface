@@ -96,6 +96,7 @@ header{
     color: black;
 }
 
+
 .navbar img:nth-of-type(2){
     margin: 5% 0;
     background-size: cover;
@@ -151,34 +152,59 @@ header{
 
 .middle-content .boxes .box:nth-of-type(1){
     background: teal;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(2){
     background: gold;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(3){
     background: cadetblue;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(4){
     background: coral;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(5){
     background: crimson;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(6){
     background: forestgreen;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(7){
     background: darkorchid;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(8){
     background: hotpink;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(9){
     background: indigo;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
 .middle-content .boxes .box:nth-of-type(10){
     background: dodgerblue;
+    animation-name: degrade;
+    animation-duration: 10s;
 }
+
+@keyframes degrade {
+    0% {filter: grayscale(0)}
+    50% {filter: grayscale(100%)}
+    100% {filter: grayscale(0%)}
+  }
 
 
  /* ===== bottom content styles ===== */
@@ -232,6 +258,8 @@ footer nav a {
     .navbar-links{
         width: 65%;
     }
+
+    
 
     .top-content{
         flex-direction: column;
